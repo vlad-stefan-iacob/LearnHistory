@@ -1,0 +1,152 @@
+<html>
+<head>
+<title>Test de evaluare</title>
+</head>
+<body>
+<body background="om4.jpg" style="background-repeat:no-repeat;background-size: cover; height: 100%;">
+<form name="f">
+  <label for="cron">Timpul expirat: </label><input type="text" size="5" name="cron"><label for="cron"> minute : secunde</label>
+</form> 
+<b>Nume:</b><input type="text" size="20" /><p><b>Clasa:</b><input type="text" size="5"><p>
+
+<form name="myform">
+<b>1. Care au fost cele mai mari democratii liberale din secolul XX?</b> (10 puncte)<br>
+<input type="radio" name="q1" value="a">a) Italia, SUA, Romania;<br>
+<input type="radio" name="q1" value="b">b) Marea Britanie, SUA, Franta;<br>
+<input type="radio" name="q1" value="c">c) Marea Britanie, SUA, Rusia;<br>
+<input type="radio" name="q1" value="d">d) Nici o varianta nu este corecta.<p>
+
+<b>2. Care sunt principiile de baza ale democratiei?</b> (10 puncte)<br>
+<input type="radio" name="q2" value="a">a) Votul universal si suveranitatea poporului;<br>
+<input type="radio" name="q2" value="b">b) Votul cenzitar si suveranitatea poporului;<br>
+<input type="radio" name="q2" value="c">c) Respectarea drepturilor omului, pluripartidism, limitarea si separarea puterilor in stat;<br>
+<input type="radio" name="q2" value="d">d) Variantele a) si c) sunt corecte.<p>
+
+<b>3. Cum considera oamenii de stiinta ca este fascismul?</b> (10 puncte)<br>
+<input type="radio" name="q3" value="a">a) De extrema dreapta si stanga;<br>
+<input type="radio" name="q3" value="b">b) De extrema stanga;<br>
+<input type="radio" name="q3" value="c">c) De extrema dreapta;<br>
+<input type="radio" name="q3" value="d">d) De nici o extrema.<p>
+
+<b>4. In ce an si unde a aparut comunismul?</b> (10 puncte)<br>
+<input type="radio" name="q4" value="a">a) 1917, in Rusia;<br>
+<input type="radio" name="q4" value="b">b) 1917, in Romania;<br>
+<input type="radio" name="q4" value="c">c) 1920, in Rusia;<br>
+<input type="radio" name="q4" value="d">d) 1919, in Germania.<p>
+
+<b>5. Cand a fost fondat fascismul de catre sindicalisti?</b> (10 puncte)<br>
+<input type="radio" name="q5" value="a">a) In Primul Razboi Mondial;<br>
+<input type="radio" name="q5" value="b">b) In Al Doilea Razboi Mondial;<br>
+<input type="radio" name="q5" value="c">c) In perioada interbelica;<br>
+<input type="radio" name="q5" value="d">d) Inainte de Primul Razboi Mondial.<p>
+
+<b>6. Care sunt cele 3 modele istorice care stau la baza democratiei moderne?</b> (5 puncte)<br>
+<input type="radio" name="q6" value="a">a) Romanesc, italienesc, francez;<br>
+<input type="radio" name="q6" value="b">b) American, francez, rusesc;<br>
+<input type="radio" name="q6" value="c">c) American, francez, englez;<br>
+<input type="radio" name="q6" value="d">d) German, englez, rusesc.<p>
+
+<b>7. Cine a fost liderul comunist din Romania inainte de Nicolae Ceausescu?</b> (10 puncte)<br>
+<input type="radio" name="q7" value="a">a) Petru Groza;<br>
+<input type="radio" name="q7" value="b">b) Ion Gheorghe Maurer;<br>
+<input type="radio" name="q7" value="c">c) Gheorghe Gheorghiu-Dej;<br>
+<input type="radio" name="q7" value="d">d) Ion Iliescu.<p>
+
+<b>8. Pe ce program se baza nazismul in timpul lui Hitler?</b> (10 puncte)<br>
+<input type="radio" name="q8" value="a">a) Programul in 20 de puncte din 1923;<br>
+<input type="radio" name="q8" value="b">b) Programul in 25 de puncte din 1921;<br>
+<input type="radio" name="q8" value="c">c) Programul in 21 de puncte din 1920;<br>
+<input type="radio" name="q8" value="d">d) Programul in 25 de puncte din 1920.<p>
+
+<b>9. In timpul carui dictator s-a dezvoltat nazismul?</b> (5 puncte)<br>
+<input type="radio" name="q9" value="a">a) Benito Mussolini;<br>
+<input type="radio" name="q9" value="b">b) Adolf Hitler;<br>
+<input type="radio" name="q9" value="c">c) Francisco Franco;<br>
+<input type="radio" name="q9" value="d">d) Nicolae Ceausescu.<p>
+
+<b>10. In ce perioada s-a aflat Romania in comunism?</b> (10 puncte)<br>
+<input type="radio" name="q10" value="a">a) Intre 1940-1989;<br>
+<input type="radio" name="q10" value="b">b) Intre 1947-1990;<br>
+<input type="radio" name="q10" value="c">c) Intre 1947-1989;<br>
+<input type="radio" name="q10" value="d">d) Intre 1945-1987.<p>
+
+<input type="button"value="Finalizare test" onclick="check()">
+</form>
+<script>
+function check(){
+var q1=document.myform.q1.value;
+var q2=document.myform.q2.value;
+var q3=document.myform.q3.value;
+var q4=document.myform.q4.value;
+var q5=document.myform.q5.value;
+var q6=document.myform.q6.value;
+var q7=document.myform.q7.value;
+var q8=document.myform.q8.value;
+var q9=document.myform.q9.value;
+var q10=document.myform.q10.value;
+
+var pct=10;
+var rc="";
+
+if (q1=="b"){
+pct+=10;}
+else {
+rc+="1.b); ";}
+if (q2=="d"){
+pct+=10;}
+else {
+rc+="2.d); ";}
+if (q3=="c"){
+pct+=10;}
+else {
+rc+="3.c); ";}
+if (q4=="a"){
+pct+=10;}
+else {
+rc+="4.a); ";}
+if (q5=="a"){
+pct+=10;}
+else {
+rc+="5.a); ";}
+if (q6=="c"){
+pct+=5;}
+else {
+rc+="6.c); ";}
+if (q7=="c"){
+pct+=10;}
+else {
+rc+="7.c); ";}
+if (q8=="d"){
+pct+=10;}
+else {
+rc+="8.d); ";}
+if (q9=="b"){
+pct+=5;}
+else {
+rc+="9.b). ";}
+if (q10=="c"){
+pct+=10;}
+else {
+rc+="10.c). ";}
+alert("Test finalizat! Punctajul final este de "+pct+" puncte");
+if(pct<100)
+alert("Corectarea raspunsurilor gresite: "+rc);}
+var sec=0
+var min=0
+document.f.cron.value='0'  
+function display() {
+  if (sec>=59) {
+    sec=0;
+    min+=1;
+  }
+else
+  sec+=1;
+document.f.cron.value=min+" : "+sec   
+  setTimeout("display()",1000)    
+if(min==15 && sec==0)
+alert ("Timpul a expirat!");
+}
+display()
+</script>
+</body>
+</html>
